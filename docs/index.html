@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Five Nights At The Loud House - downloadable Windows game files and extensions.">
+  <title>Five Nights At The Loud House</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f7f2e8;
+      --muted: #b8b0a2;
+      --paper: #201d19;
+      --line: #4b443b;
+      --accent: #efb84a;
+      --accent-strong: #ffce68;
+      --red: #c95745;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 80% 0%, rgba(201, 87, 69, .22), transparent 34rem),
+        linear-gradient(135deg, #171512 0%, #29231d 52%, #151311 100%);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.5;
+    }
+
+    a { color: inherit; }
+
+    .page {
+      width: min(1080px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 28px 0 56px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .mark {
+      color: var(--accent);
+      font: 700 13px/1.2 Arial, sans-serif;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    nav { display: flex; gap: 20px; font: 14px Arial, sans-serif; }
+    nav a { color: var(--muted); text-decoration: none; }
+    nav a:hover { color: var(--accent-strong); }
+
+    main { padding-top: clamp(64px, 12vw, 140px); }
+
+    .eyebrow {
+      margin: 0 0 16px;
+      color: var(--accent);
+      font: 700 12px Arial, sans-serif;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(48px, 9vw, 96px);
+      font-weight: 400;
+      line-height: .94;
+      letter-spacing: 0;
+    }
+
+    .intro {
+      max-width: 590px;
+      margin: 28px 0 34px;
+      color: var(--muted);
+      font-size: 19px;
+    }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 18px;
+      border: 1px solid var(--accent);
+      color: #18140f;
+      background: var(--accent);
+      font: 700 14px Arial, sans-serif;
+      text-decoration: none;
+    }
+    .button:hover { background: var(--accent-strong); border-color: var(--accent-strong); }
+    .button.secondary { color: var(--ink); background: transparent; border-color: var(--line); }
+    .button.secondary:hover { border-color: var(--accent); }
+
+    .details {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      margin-top: 112px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: var(--line);
+    }
+
+    .detail { padding: 24px 20px 26px; background: rgba(32, 29, 25, .86); }
+    .detail strong { display: block; margin-bottom: 7px; color: var(--accent); font: 700 11px Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+    .detail span { color: var(--muted); font: 15px Arial, sans-serif; }
+
+    footer { display: flex; justify-content: space-between; gap: 20px; margin-top: 26px; color: var(--muted); font: 12px Arial, sans-serif; }
+
+    @media (max-width: 640px) {
+      .page { width: min(100% - 28px, 1080px); }
+      header { align-items: flex-start; }
+      nav { gap: 12px; }
+      main { padding-top: 72px; }
+      .details { grid-template-columns: 1fr; margin-top: 76px; }
+      footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="mark">FNALH / Archive</div>
+      <nav aria-label="Primary navigation">
+        <a href="#download">Download</a>
+        <a href="modules/">Modules</a>
+      </nav>
+    </header>
+
+    <main>
+      <p class="eyebrow">A fan-made Windows game</p>
+      <h1>Five Nights At The Loud House</h1>
+      <p class="intro">The game files and supporting extensions, gathered in one place. Download the build below to play on Windows.</p>
+      <div class="actions" id="download">
+        <a class="button" href="Five%20Nights%20at%20The%20Loud%20House.exe" download>Download game <span aria-hidden="true">&#8594;</span></a>
+        <a class="button secondary" href="Five%20Nights%20at%20The%20Loud%20House.dat" download>Download data file</a>
+      </div>
+
+      <section class="details" aria-label="Archive details">
+        <div class="detail"><strong>Platform</strong><span>Windows executable</span></div>
+        <div class="detail"><strong>Included</strong><span>Game executable and data</span></div>
+        <div class="detail"><strong>Extras</strong><span><a href="modules/">Browse extension modules</a></span></div>
+      </section>
+    </main>
+
+    <footer>
+      <span>FNALH project archive</span>
+      <span>Files are hosted in this repository.</span>
+    </footer>
+  </div>
+</body>
+</html>
