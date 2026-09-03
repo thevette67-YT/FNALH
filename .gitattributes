@@ -1,0 +1,2 @@
+docs/fnatlh.zip filter=lfs diff=lfs merge=lfs -text
+docs/Five[[:space:]]Nights[[:space:]]at[[:space:]]The[[:space:]]Loud[[:space:]]House.dat filter=lfs diff=lfs merge=lfs -text
